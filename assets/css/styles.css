@@ -5,8 +5,7 @@
   --header-height: 3rem;
   --font-semi: 600;
   /*===== Colores =====*/
-  /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
-  /* HSL color mode */
+
   --hue-color: 224;
   --first-color: hsl(var(--hue-color), 89%, 60%);
   --second-color: hsl(var(--hue-color), 56%, 12%);
@@ -270,6 +269,7 @@ img {
 }
 
 .about__text {
+  font-size:15px;
   margin-bottom: var(--mb-4);
 }
 
@@ -289,7 +289,10 @@ table {
 th,td {
   border: 0px solid black;
 }
-
+.exp__text {
+  font-size:15px;
+  margin-bottom: var(--mb-4);
+}
 table.a {
   table-layout: fixed;
   width: 200%;
@@ -411,6 +414,11 @@ table.a {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     text-align: justify;
+  }
+  .exp__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    text-align: initial;
   }
   .edu__container {
     grid-template-columns: repeat(2, 1fr);
